@@ -1,0 +1,450 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+body{
+  background-color: #111827;  
+}
+
+section{
+    position: relative;
+    min-height: 100vh;
+    background: #080C30;
+    display: flex;
+    justify-content: center;
+}
+
+section .container{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
+}
+
+section .container .user{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.imgbg{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.imgbg img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.user .form{
+    position: relative;
+    width: 50;
+    height: 100%;
+    background-color: #111827;
+    padding: 40px;
+}
+
+
+.form h1{
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: bold;
+    text-align: left;
+    width: 100%;
+    margin-bottom: 15px;
+    color: white;
+}
+
+.nama{
+    font-size:14px ;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #DBE4EC ;
+    margin-left: 1px;
+}
+
+.pw{
+    font-size:14px ;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #DBE4EC ;
+    margin-left: 1px;
+}
+
+.lupa-pw{
+    margin-bottom: 8px;
+    margin-left: 71.5%;
+    margin-top: 8px;    
+}
+
+.lupa-pw a{
+    font-size:  13px ;
+    line-height: 20px ;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.5s;
+    color: #CBD4DC;
+}
+
+.lupa-pw a:hover{
+    color: #47B5FF;
+}
+
+.form input{
+    width: 350px;
+    height: 45px;
+    padding: 12px;
+    background: rgb(229 231 235);
+    border: none;
+    box-shadow: none;
+    font-size: 14px;
+    margin-bottom: 8px  ;
+    margin-top: 8px;
+    font-weight: 400;
+    border-radius: 5px;
+}
+
+.form input:focus{
+    border: solid 1px rgb(59 130 246) ;
+    background-color: white;
+    outline: none;
+}
+
+.form input[type="submit"]{
+    background: #3A81F6;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    transition: 0.5s;
+}
+
+.form input[type="submit"]:hover{
+    background-color: #47B5FF;
+    color: white;
+}
+
+.signup .form input[type="submit"]{
+    background-color: #080C30;
+    margin-top: 10px;
+}
+
+hr{
+    width: 100%;
+    border: 1px solid #6B7280;
+    background-color: #6B7280;
+    margin-bottom: 12px;
+    margin-top: 16px;
+}
+
+.login-cadangan{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.login-cadangan .google{
+    cursor: pointer;
+    width:40px ;
+    height:40px ;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-radius: 50%;
+    margin-right: 12px;
+    border: none;
+    transition: 0.5s;
+}
+
+.google:hover{
+    background : #47B5FF;
+
+}
+
+.login-cadangan .steam{
+    cursor: pointer;
+    width:40px ;
+    height:40px ;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-radius: 50%;
+    border: none;
+    transition: 0.5s;
+}
+
+.steam:hover{
+    background :#47B5FF;    
+}
+
+.logo-google{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-steam{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form .signupz{
+    position: relative;
+    margin-top: 10px;
+    font-size: 14px;
+    margin-left: 16%;
+    font-weight: light;
+    color: #DBE4EC ;
+}
+
+.signupz button{
+    border: none;
+    font-weight: 600;
+    text-decoration: none;
+    text-emphasis: none;
+    color: #2882F6;
+    transition: 0.5s;
+    background-color: transparent;
+    cursor: pointer;
+}
+    
+.signupz button:hover{
+    color: #1D4ED8;
+}
+
+.publisher{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.publisher p{
+    font-size: 14px ;
+    line-height: 20px ;
+    color: #999;
+    transition: 0.5s;
+    font-weight: medium;
+}
+
+.publisher p:hover{
+    color: white;
+}
+
+/* register */
+
+.fname{
+    font-size:14px ;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #DBE4EC ;
+    margin-left: 1px;
+}
+
+.form .signinz{
+    position: relative;
+    margin-top: 10px;
+    font-size: 14px;
+    margin-left: 11%;
+    font-weight: light;
+    color: #DBE4EC ;
+}
+
+.signinz button{
+    font-weight: 600;
+    text-decoration: none;
+    text-emphasis: none;
+    color: #2882F6;
+    transition: 0.5s;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.signinz button:hover{
+    color: #1D4ED8;
+}
+
+#registergame{
+    display: none;
+}
+
+.registermain{
+    width: 350px;
+}
+
+
+/* INI BUAT GAMENYA */
+
+#card-game{
+    width:95% ;
+    position: relative;
+    max-width: 800px;
+    margin: auto;
+    background-color: #fff;
+    padding: 25px;
+    border-radius:25px ;
+    height: 360px;
+    margin-top: 120px;
+}
+
+#cardcanvas{
+    width:95% ;
+    position: relative;
+    max-width: 1100px;
+    margin: auto;
+    background-color: #374151;
+    padding: 24px;
+    border-radius:25px ;
+    height: 550px;
+    margin-top: 40px;
+    display: none;
+}
+
+
+.judulgame{
+    text-align: center;
+    padding: 10px;
+    margin-left: 155.5px;
+}
+
+#card-game .isicard{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 10px 10px 290px;
+}
+
+.isicard p{
+    margin-bottom: 15px;
+    font-size: 17px;
+}
+
+
+.start-out button{
+    margin-top: 22px;
+    background: #2882F6;
+    color: white;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    transition: 0.5s;
+    border: none;
+    width: 100px;
+    height: 40px;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.start-out #btn-out{
+    margin-left: 290px;
+}
+
+.start-out #btn-start{
+    margin-left: 210px;
+}
+
+.start-out button:hover{
+    background-color: #47B5FF;
+}
+
+canvas{
+    background-color: #f1f1f1;
+    border-radius: 20px;
+}
+
+.isigame{
+    display: none;
+}
+
+#playername{
+    display: none;
+    margin-left: 15px;
+    margin-top: 7px;
+    position: absolute;
+    font-size: 20px;
+}
+
+#gambarGame{
+    width: 300px;
+    height: 360px;
+    border-radius: 20px;
+    border: none;
+    position: absolute;
+    z-index: 3;
+    margin-left: 240px;
+}
+
+#kumpulbtn2{
+    margin-top: 3px;
+    position: absolute;
+    display: none;
+}
+
+#kumpulbtn2 button{
+    background: #2882F6;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    transition: 0.5s;
+    border: none;
+    width: 120px;
+    height: 60px;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+#kumpulbtn2 button:hover{
+    background-color:#47B5FF;
+    box-shadow: 2px 2px 12px rgba(0,0,0, 0.5)
+}
+
+#restart{
+    margin-left: 100px;
+}
+
+#quit{
+    margin-left: 600px;
+}
+
+.publisher2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+    position: absolute;
+    margin-left: 40%;
+}
+
+.publisher2 p{
+    font-size: 14px ;
+    line-height: 20px ;
+    color: #999;
+    transition: 0.5s;
+    font-weight: medium;
+}
+
+.publisher2 p:hover{
+    color: white;
+}
